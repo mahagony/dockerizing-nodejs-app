@@ -36,7 +36,7 @@ test('GET /docker', t => {
       t.end();
     } else {
       t.ok(res.body, 'It should have a response body');
-      t.equals(res.body.docker, 'rocks!', 'It should return a docker parameter with value rocks!');
+      t.equals(res.body.docker, 'rocks! modified', 'It should return a docker parameter with value rocks!');
 
       t.end();
     }
